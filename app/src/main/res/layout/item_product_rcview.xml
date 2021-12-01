@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="160dp"
+    >
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="@drawable/dv_img"
+
+        >
+
+        <TextView
+            android:id="@+id/it_rv_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="9:00"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+
+            android:id="@+id/it_rv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/it_rv_tempmin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/it_rv_tempmax"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="30"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

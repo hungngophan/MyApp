@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:id="@+id/background2"
+    >
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/tvDaynd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ngày tháng"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/tvStatusnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái"
+            android:textSize="20dp"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imgStatusnd"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:text="Temp_min"
+            android:id="@+id/tvTempminnd"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:text="Temp_max"
+            android:id="@+id/tvTempmaxnd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingRight="30dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

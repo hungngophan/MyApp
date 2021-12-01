@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:background="@drawable/sun"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:text="Weather App"
+                    />
+                <Button
+
+                    android:background="@drawable/ic_location"
+                    android:id="@+id/btnSearchLocation"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+
+                </Button>
+
+                <Button
+
+                    android:background="@drawable/ic_search"
+                    android:id="@+id/btnSearch"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+
+                </Button>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/imgLocation"
+                    android:background="@drawable/ic_location"
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:id="@+id/tvresultCity"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ABC"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tvresltDay"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="T.4, 21 tháng 7 "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"/>
+                <TextView
+                    android:id="@+id/tvresultTemp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:text="32°"
+                    android:textSize="110dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:id="@+id/tvresultCloud"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:text="cloud"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/dv_img"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="275dp">
+                <ListView
+                    android:id="@+id/lvViewnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="30dp"
+                android:background="@drawable/dv_img"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <TextView
+                    android:id="@+id/tvresultTempmax"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temp max"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvresultTempmin"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temp min"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tvresultFeellikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Feel likes"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvresultHudimity"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hudimity"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvresultSpeedWind"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speed Wind"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
